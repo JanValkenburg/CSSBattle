@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSBattle #62</title>
+</head>
+<body>
+    <div></div>
+<style>
+  :root {
+    --color-100: #191919;
+    --color-200: #824B20;
+    --color-300: #E08027;
+    --color-400: #F2AD43;
+    --color-500: #FFF58F;
+  }
+  body {
+    background-color: var(--color-100);
+  }
+  div {
+    position:relative;
+    margin: 50px auto;
+    width: 150px;
+    height: 200px;
+    background-color: var(--color-400);
+    background-image: 
+      radial-gradient(
+        circle, 
+        var(--color-500) 50%, 
+        var(--color-400) 50%, 
+        var(--color-400)
+      );
+    background-size:82px 82px;
+    background-repeat: no-repeat;
+    background-position: center 78px;
+    border-radius:75px 75px 20px 20px;
+    overflow:hidden;
+  }
+  div:after{
+    position:absolute;
+    content:'';
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    top:100px;
+    left:33.5%;
+    background-color:var(--color-200);
+  }
+  div:before{
+    position:absolute;
+    content:'';
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    top:100px;
+    right:33.5%;
+    background-color:var(--color-300);
+  }
+</style>
+</body>
+</html>
