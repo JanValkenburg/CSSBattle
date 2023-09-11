@@ -1,0 +1,59 @@
+<div o tr>
+    <div i></div>
+  </div>
+  <div o tl>
+    <div i></div>
+  </div>
+  <div o bl>
+    <div i></div>
+  </div>
+  <div o br>
+    <div i></div>
+  </div>
+  <style>
+    * {
+      background:#B5D1FB;
+      margin:0;
+      box-sizing:border-box;
+      position: absolute;
+    }
+    [o] {
+      height: 75px;
+      width: 215px;
+      overflow:hidden;
+      top: 75px;
+      border-top-right-radius:75px;
+    }
+    [i] {
+      width: 215px;
+      height: 150px;
+      border-top-right-radius:75px;
+      border-top: 30px solid #230259;
+      border-right: 30px solid #230259;
+    }
+    [bl] {
+      top: 150px;
+      transform:  scaleY(-1);
+    }
+    [bl] [i] {
+      border-top: 30px solid #8819F6;
+      border-right: 30px solid #8819F6;
+    }
+    [br] {
+      top: 150px;
+      left: 185px;
+      transform: scaleX(-1) scaleY(-1);
+    }
+    [br] [i] {
+      border-top: 30px solid #230259;
+      border-right: 30px solid #230259;
+    }
+    [tr]{
+      top: 75px;
+      left: 185px;
+      transform:scaleX(-1);
+    }
+    [tr] [i]{
+      border-top: 30px solid #8819F6;
+      border-right: 30px solid #8819F6;
+    }
