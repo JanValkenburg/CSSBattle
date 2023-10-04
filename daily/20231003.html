@@ -1,0 +1,41 @@
+<a><b></b><b></b><b></b></a>
+<style>
+  body {
+    background: #FEFAE0;
+       height:284px;
+    display: grid;
+    place-content:center;
+  }
+  a {
+    width: 180px;
+    height: 180px;
+    border-radius:50%;
+    border: 20px solid #9CCCDB;
+    position: relative;
+  }
+  a:before {
+    content: '';
+    position: absolute;
+    inset: 50%;
+    translate: -50% -50%;
+    background: #9CCCDB;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  b {
+    position: absolute;
+    inset: 50%;
+    translate: -50% -100%;
+    background: #9CCCDB;
+    width: 20px;
+    height: 100px;
+    transform-origin: bottom center;
+  }
+  b:nth-of-type(1) {
+    rotate: 120deg
+}
+  b:nth-of-type(2) {
+    rotate: 240deg
+}
+</style>
