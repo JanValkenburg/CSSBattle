@@ -1,0 +1,50 @@
+<div>
+    <a></a>
+    <b></b>
+    <c></c>
+    <d></d>
+  </div>
+  <style>
+    body {
+      background: #D8B788;
+      margin:0;
+      display:grid;
+      place-content: center;
+      height:300px;
+    }
+    div {
+      width: 120px;
+      height: 180px;
+      margin-top: 20px;
+      border-radius: 10px;
+      background: #684C3B;
+      position:relative;
+    }
+    a {
+      display:block;
+      background:#D8B788;
+      height: 20px;
+      margin-top: 20px
+    }
+    b,c,d {
+      position: absolute;
+      top:0;
+      left: 50%;
+      width:40px;
+      height:40px;
+      translate: -50% -20px;
+      border-radius: 10px;
+      display:block;
+      background:#684C3B;
+    }
+    c, d {
+      top:70px;
+      left: 50%;
+      width:20px;
+      height:80px;
+      translate: -150% 0px;
+      background:#D8B788;
+    }
+    d {
+      translate: 50% 0px;
+    }
